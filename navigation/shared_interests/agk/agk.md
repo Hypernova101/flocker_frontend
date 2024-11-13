@@ -109,30 +109,30 @@ author: Mihir, Pradyun, Derek, Ansh
             width: 50%;
         }
         .post-item {
-    border: 1px solid #ff7a7a; /* Match the site's border color */
+    border: 1px solid #ff7a7a;
     border-radius: 15px;
-    background-color: #073461; /* Use the gradient color scheme */
+    background-color: #073461;
     margin-bottom: 20px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
-    color: white; /* Ensure text is readable */
+    color: white;
 }
 .post-item:hover {
     transform: scale(1.02);
 }
 .post-item h3 {
     margin-top: 0;
-    color: #ff4747; /* Match the site's heading color */
-    border-bottom: 1px solid #ff7a7a; /* Optional: underline effect */
+    color: #ff4747;
+    border-bottom: 1px solid #ff7a7a;
     padding-bottom: 5px;
 }
 .post-item p {
     margin: 10px 0;
-    color: #E6E6FA; /* Adjust to match the overall color scheme */
+    color: #E6E6FA;
 }
 .post-item p strong {
-    color: #E6E6FA; /* Match the theme's highlight color */
+    color: #E6E6FA;
 }
     </style>
 </head>
