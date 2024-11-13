@@ -20,6 +20,7 @@ author: Mihir, Pradyun, Derek, Ansh
             color: #ff4747;
             text-align: center;
             padding: 20px;
+            border-radius: 8px;
         }
         .container {
             max-width: 1200px;
@@ -111,13 +112,14 @@ author: Mihir, Pradyun, Derek, Ansh
 </head>
 
 <body>
+    <br>
     <div class="header">
         <h1>Welcome to AGK</h1>
         <p>Your platform for exploring extracurricular activities!</p>
     </div>
     <div class="container">
         <div class="category">
-            <h2>Cyber Club</h2>
+            <h2>Cyber</h2>
             <div class="post">
                 <h3>Weekly Meeting Update</h3>
                 <p>Join us every Monday at 4 PM in Room A101 to discuss upcoming events.</p>
@@ -129,7 +131,7 @@ author: Mihir, Pradyun, Derek, Ansh
         </div>
         <br>
         <div class="category">
-            <h2>Robotics Club</h2>
+            <h2>Robotics</h2>
             <div class="post">
                 <h3>Weekly Meeting Update</h3>
                 <p>Join us every Tuesday immediately after school in Room A107 (Mr. Campillo's) to discuss upcoming events and work on improving the robot.</p>
