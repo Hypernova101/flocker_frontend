@@ -216,7 +216,31 @@ author: Mihir, Pradyun, Derek, Ansh
      * Fetch groups for dropdown selection
      * User picks from dropdown
      */
-    
+    async function fetchGroups() {
+        try {
+            const response = await fetch(`${pythonURI}/api/groups/filter`, {
+                ...fetchOptions,
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ section_name: "Shared Interest" }) // Adjust the section name as needed
+            });
+            if (!response.ok) {
+                throw new Error('Failed to fetch groups: ' + response.statusText);
+            }
+            const groups = await response.json();
+            const groupSelect = document.getElementById('group_id');
+            groups.forEach(group => {
+                const option = document.createElement('option');
+                option.value = group.name; // Use group name for payload
+                option.textContent = group.name;
+                groupSelect.appendChild(option);
+            });
+        } catch (error) {
+            console.error('Error fetching groups:', error);
+        }
+    }
 
     /**
      * Fetch channels based on selected group
